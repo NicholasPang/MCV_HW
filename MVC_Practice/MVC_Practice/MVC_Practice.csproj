@@ -163,6 +163,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ReportController.cs" />
     <Compile Include="Controllers\客戶聯絡人Controller.cs" />
     <Compile Include="Controllers\客戶資料Controller.cs" />
     <Compile Include="Controllers\客戶銀行帳戶Controller.cs" />
@@ -205,6 +206,9 @@
     </Compile>
     <Compile Include="Models\sysdiagramRepository.cs">
       <DependentUpon>IRepository.EF6.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\View.cs">
+      <DependentUpon>顧客資料.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\客戶聯絡人.cs">
       <DependentUpon>顧客資料.tt</DependentUpon>
@@ -348,6 +352,7 @@
     <Content Include="Views\客戶銀行帳戶\Create.cshtml" />
     <Content Include="Views\客戶銀行帳戶\Edit.cshtml" />
     <Content Include="Views\客戶銀行帳戶\Delete.cshtml" />
+    <Content Include="Views\Report\Index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

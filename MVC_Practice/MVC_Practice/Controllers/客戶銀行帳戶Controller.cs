@@ -15,7 +15,7 @@ namespace MVC_Practice.Controllers
         // GET: 客戶銀行帳戶
         public ActionResult Index()
         {
-            return View(db.客戶銀行資訊.ToList());
+            return View(db.客戶銀行資訊.OrderBy(x=>x.客戶Id).ToList());
         }
         public ActionResult Create()
         {
