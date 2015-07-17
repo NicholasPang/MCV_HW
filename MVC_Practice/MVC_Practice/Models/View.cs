@@ -17,5 +17,7 @@ namespace MVC_Practice.Models
         public string 客戶名稱 { get; set; }
         public Nullable<int> 銀行帳戶數量 { get; set; }
         public Nullable<int> 連絡人數量 { get; set; }
+        public Nullable<bool> 是否已刪除 { get; set; }
+        public int Id { get; set; }
     }
 }

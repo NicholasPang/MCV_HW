@@ -13,7 +13,7 @@ namespace MVC_Practice.Controllers
         public ActionResult Index()
         {
             客戶資料Entities1 db = new 客戶資料Entities1();
-            return View(db.Views.ToList());
+            return View(db.Views.Where(x => x.是否已刪除 == false).OrderBy(x => x.Id).ToList());
         }
     }
 }

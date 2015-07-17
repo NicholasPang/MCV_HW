@@ -19,8 +19,11 @@ namespace MVC_Practice.Models
         [StringLength(50, ErrorMessage="欄位長度不得大於 50 個字元")]
         [Required]
         public string 銀行名稱 { get; set; }
+        [StringLength(4, ErrorMessage = "欄位長度需為 3 個數字")]
         [Required]
         public int 銀行代碼 { get; set; }
+        [StringLength(4, ErrorMessage = "欄位長度需為 4 個數字")]
+        [Required]
         public Nullable<int> 分行代碼 { get; set; }
         
         [StringLength(50, ErrorMessage="欄位長度不得大於 50 個字元")]

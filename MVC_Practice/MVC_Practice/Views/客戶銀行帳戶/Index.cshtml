@@ -38,10 +38,10 @@
             @Html.DisplayFor(modelItem => item.銀行名稱)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.銀行代碼)
+            @Html.DisplayFor(modelItem => item.銀行代碼).ToString().PadLeft(3, '0')
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.分行代碼)
+            @Html.DisplayFor(modelItem => item.分行代碼).ToString().PadLeft(4, '0')
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.帳戶名稱)

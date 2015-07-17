@@ -27,6 +27,7 @@ namespace MVC_Practice.Models
         public string 傳真 { get; set; }
         public string 地址 { get; set; }
         public string Email { get; set; }
+        public bool 是否已刪除 { get; set; }
     
         public virtual ICollection<客戶銀行資訊> 客戶銀行資訊 { get; set; }
         public virtual ICollection<客戶聯絡人> 客戶聯絡人 { get; set; }
